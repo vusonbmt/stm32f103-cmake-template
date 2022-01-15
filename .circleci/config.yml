@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: vusonbmt/dockerdemo:latest
+      - image: vusonbmt/dockerdemo:0.2
     steps:
       - checkout
       - run:
