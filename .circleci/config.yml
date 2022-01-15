@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: dimtass/stm32-cde-image:latest
+      - image: vusonbmt/dockerdemo:latest
     steps:
       - checkout
       - run:
