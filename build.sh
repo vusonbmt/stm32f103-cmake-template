@@ -3,7 +3,7 @@
 echo "Building the project in Linux environment"
 
 # Toolchain path
-: ${TOOLCHAIN_DIR:="/opt/toolchains/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux"}
+: ${TOOLCHAIN_DIR:="/opt/toolchains/gcc-arm-none-eabi-10.3-2021.10"}
 # select cmake toolchain
 : ${CMAKE_TOOLCHAIN:=TOOLCHAIN_arm_none_eabi_cortex_m3.cmake}
 # select to clean previous builds
