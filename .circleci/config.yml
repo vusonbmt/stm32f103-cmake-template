@@ -23,3 +23,20 @@ jobs:
       - store_artifacts:
           path: /tmp/artifacts/stm32f103-cmake-template-freertos.bin
           destination: stm32f103-cmake-template-freertos.bin
+  unit-test:
+    docker:
+      - image: vusonbmt/dockerdemo:0.2
+    steps:
+      - checkout
+      - run:
+          name: Intall apt packages
+          command: 'echo Hello UT'
+      # - run:
+      #     name: Build Unit Tests
+      #     command: |
+      #         cd test/rt/testbuild
+      #         make
+      # - run:
+      #     name: Run Unit Tests
+      #     command: |
+      #         ./test/rt/testbuild/build/ch          
