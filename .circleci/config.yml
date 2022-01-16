@@ -40,3 +40,9 @@ jobs:
       #     name: Run Unit Tests
       #     command: |
       #         ./test/rt/testbuild/build/ch          
+workflows:
+  version: 2.1
+  build_and_test:
+    jobs:
+      - build
+      - unit-test      
